@@ -1,0 +1,9 @@
+*.json
+*.yaml
+*.yml
+.env
+*auth*
+*token*
+*key*
+*secret*
+*credentials*
