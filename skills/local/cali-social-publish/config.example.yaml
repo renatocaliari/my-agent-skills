@@ -1,0 +1,23 @@
+# Copy to config.yaml and adjust.
+
+tone: >
+  direct, no generic marketing jargon ("elevate", "unlock", "seamless"),
+  shares real builder experience (Go, PocketBase, agents, narrative
+  practice) instead of abstract advice.
+
+default_mode: review   # "auto" only if you're sure -- never change the
+                        # default silently, always pass --mode explicitly
+                        # when you want auto
+
+default_n_variants: 3
+
+# used as a language fallback in generation if the source text isn't clear
+default_language: pt-BR
+
+# How to actually publish. "browser" reuses the session already logged in
+# by social-listening (free, no extra setup). "api" uses the official API
+# (zero detection risk, but requires credentials and billing on X).
+posting_method:
+  x: browser          # low risk for own content at low frequency
+  linkedin: browser    # fills the post; YOU click publish (never automatic)
+  # linkedin: api      # switch to this if you want 100% hands-off publishing

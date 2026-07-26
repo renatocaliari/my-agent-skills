@@ -1,0 +1,30 @@
+# Copy to config.yaml and adjust.
+
+topics:
+  - "agentic coding"
+  - "pi.dev"
+  - "narrative practice"
+  - "self-hosted"
+  - "PocketBase"
+  - "Go"
+
+weights:
+  velocity: 0.4    # how fast the post is gaining engagement
+  reply_gap: 0.3   # how much room is left to comment (fewer replies = better)
+  relevance: 0.3   # match against the topics above
+
+languages:
+  - pt-BR
+  - en
+
+# X
+x:
+  scroll_rounds: 10
+  search_queries:
+    - "agentic coding"
+    - "AI agent orchestration"
+
+# LinkedIn -- see references/linkedin-safety-limits.md before changing this
+linkedin:
+  scroll_rounds: 4
+  max_runs_per_day: 1
