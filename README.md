@@ -22,3 +22,16 @@ All skills live under `skills/local/<name>/` — the path published by the
 **No credentials ever.** Skills that need runtime values read them from
 `~/.secrets/<tool>.env` on each host and print a guided setup when missing
 (see `skills/local/substack-publish/SKILL.md` → "Configuration guard").
+
+## Re-publishing (keep this repo in sync with the Mac hub)
+
+Published copies can go stale vs the authoritative hub. After editing any
+skill locally:
+
+```bash
+agent-sync share run        # re-publish selected skills → skills/local/
+git -C . pull --rebase && git push   # if publishing from another clone
+```
+
+Planned: weekly automated `share run` alongside the Sunday
+`npx skills update -g` cycle.
