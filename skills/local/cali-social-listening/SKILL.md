@@ -1,6 +1,6 @@
 ---
 name: cali-social-listening
-description: Reads and analyzes X/Twitter and LinkedIn timelines to summarize information, detect conversation patterns, and rank posts worth engaging with. Use whenever the user asks to "read the feed", "see what people are saying about X", "summarize recent tweets/posts", "find patterns", or "where could I comment" on X or LinkedIn — even if they don't use the word "scraping" or "skill". This skill is READ-ONLY: it never posts, comments, or likes anything. For interacting/replying, use the separate `social-engage` skill.
+description: "Reads and analyzes X/Twitter and LinkedIn timelines to summarize information, detect conversation patterns, and rank posts worth engaging with. Use whenever the user asks to 'read the feed', 'see what people are saying about X', 'summarize recent tweets/posts', 'find patterns', or 'where could I comment' on X or LinkedIn — even if they don't use the word 'scraping' or 'skill'. This skill is READ-ONLY: it never posts, comments, or likes anything. For interacting/replying, use the separate `social-engage` skill."
 ---
 
 # Social Listening
