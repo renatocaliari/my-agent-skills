@@ -132,7 +132,7 @@ The ARIA snapshot is the assertion surface: it carries text, roles, and stable r
 |------|-------|
 | Code navigation (cymbal), file search (fff), structural search (ast-grep), entity diff (sem) | `cali-code-navigation` |
 | Cross-cutting debug (framework JS API, binary freshness) | `cali-cross-cutting-debug` |
-| New Feature or Product | `/skill:stelow-product-orchestrator` |
+| New Feature or Product | — |
 | Coding standards (universal: KISS, DRY, LoB, SoC, Fail Fast, YAGNI) | `/skill:cali-product-coding-standards` |
 | Go standards (idiomatic Go, concurrency, linting) | `/skill:cali-coding-go-standards` |
 | Go stack (Datastar, Templ, NATS, Air) | `/skill:cali-coding-go-stack` |
@@ -150,7 +150,6 @@ The ARIA snapshot is the assertion surface: it carries text, roles, and stable r
 - `cali-coding-*` — práticas/padrões de escrita de código (standards, go-stack, starhtml)
 - `cali-code-*` — ferramentas de análise de código existente (navigation)
 - `cali-cross-cutting-*` — regras transversais (debug)
-- `stelow-*` — skills de planejamento de produto (fonte: `stelow-product-orchestrator`)
 - `cali-ops-*` — operações (deploy, security, package-audit)
 
 ### Project-Level AGENTS.md
