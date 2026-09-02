@@ -15,7 +15,9 @@ description: >
   anti-AI-slop tells, and context calibration. Hard floors in §17 override
   everything. Use whenever the user asks to write, draft, or generate text,
   or says "escreve no meu estilo" / "writing style" / "style guidelines".
-version: 1.5.0
+  Published text (posts, GitHub issues/comments) also carries the §20
+  on-behalf attribution block at the top.
+version: 1.6.0
 intents:
   - write a post
   - write a note
@@ -679,6 +681,7 @@ group C is situational.
       labels).
 - [ ] **§17.4** First-person uncertainty admitted, not papered over.
 - [ ] **§17.5** No publishing without explicit user confirmation.
+- [ ] **§20** Public text carries the on-behalf attribution block (EN/PT) at the top, with the owner's name/link — no "draft" wording on published text.
 
 ### B. Voice quality — if 3+ fail, revise
 
@@ -819,3 +822,65 @@ to anchor the principles in concrete text.
 The bad draft is **"competent blog post voice"** — exactly what the skill
 trains against. Compare to 19.1, which is confessional, hedged, concrete,
 and process-verb-driven. Same theme; opposite voice.
+
+## 20. Public attribution (posted on behalf — REQUIRED for published text)
+
+Applies to anything an agent publishes to a public surface: Substack posts,
+GitHub issues and comments, X/LinkedIn posts, newsletters. It is separate
+from voice (sections 1-19) — it is a disclosure the reader must see
+*before* consuming the content.
+
+### 20.1 — when it applies
+
+Every piece of text that will **leave the chat permanently** (published post,
+issue, comment). It does NOT apply to private drafts or internal notes.
+
+### 20.2 — the rule
+
+Prepend a one-line blockquote at the **very top** (before the title / first
+line) attributing the content to the owner — expressed as *posted on
+behalf of*, stating that an AI assistant helped prepare/publish it. Do NOT
+use the word "draft" (once published, it is not a draft). Always link the
+owner's name to their GitHub profile.
+
+**English (owner name: `calionauta`):**
+
+```markdown
+> Posted on behalf of [@calionauta](https://github.com/calionauta) (AI-assisted preparation and publishing)
+```
+
+**Português (matching the post's language):**
+
+```markdown
+> Publicado em nome de [@calionauta](https://github.com/calionauta) (preparação e publicação assistidas por IA)
+```
+
+Choice of phrase:
+
+- If the text's language is English → use the English phrasing.
+- If the text's language is Portuguese → use the Portuguese phrasing.
+- Any other language → use the English phrasing (widely understood) or a
+  faithful translation of the same blockquote.
+
+Blockquote format (a single `>` at line start), at the top, followed by a
+blank line before the content begins. The blockquote keeps it visually
+distinct and scannable as disclosure, not part of the prose.
+
+### 20.3 — the "should it say draft?" trap
+
+"draft" implies unpublished/incomplete. If the text is being published to a
+public surface, it is not a draft — so never write *"(AI-assisted draft)"*
+or *"rascunho"*. State that an AI assistant helped prepare and publish it.
+Shorter variants are acceptable when space is tight (e.g. an X comment with
+a 280-char cap), but never omit the attribution where the platform allows a
+blockquote:
+
+- shortest (tight character budget): `> On behalf of @calionauta (AI-assisted)`
+- standard (recommended): the two blockquotes above.
+
+### 20.4 — GitHub issues and comments
+
+Every GitHub issue or comment an agent files on the user's behalf carries
+the same blockquote at the top, in the issue/comment's language. This
+includes replies generated for the user and any comment posted to an
+external repo after the user's explicit confirmation.

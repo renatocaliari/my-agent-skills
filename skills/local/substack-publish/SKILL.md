@@ -10,7 +10,7 @@ description: >
   get_publication_stats, list_publication_tags, upload_image, and more.
   Only report what a tool returns; never fabricate draft ids, slugs, or
   publish results. NEVER publish without explicit user confirmation.
-version: 4.0.0
+version: 4.1.0
 category: publishing
 categories:
   - publishing
@@ -156,6 +156,8 @@ drafting.
 ## Rules
 
 - **Never publish without explicit user confirmation.**
+- **Published body leads with the §20 attribution block** (from `writing-style` v1.6):
+  a top blockquote on behalf of the owner — EN `> Posted on behalf of [@calionauta](https://github.com/calionauta) (AI-assisted preparation and publishing)` / PT `> Publicado em nome de [@calionauta](https://github.com/calionauta) (preparação e publicação assistidas por IA)`. No "draft" wording on published posts. Put it first, even before the title, when the platform supports it.
 - Only report what the tool returns; never fabricate draft ids, slugs, status.
 - If a call fails 401/403: the Substack session token likely expired —
   re-extract it from the browser into `~/.secrets/substack.env` (server),
@@ -174,3 +176,4 @@ drafting.
 - [ ] code blocks use 2/4 spaces, no tabs?
 - [ ] if 401/403: told the user about token re-extraction?
 - [ ] **`publish_draft` never called without explicit user confirmation?**
+- [ ] **§20 attribution block present at the top of the published body (no "draft" wording)?**
